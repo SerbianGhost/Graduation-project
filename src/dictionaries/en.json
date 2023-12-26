@@ -1,0 +1,294 @@
+{
+    "header":{
+        "news": "News",
+        "applicants": "For Applicants",
+        "about": "About College",
+        "contacts":"Contacts",
+        "languages":{
+            "language": "Language",
+            "ru": "Russian language",
+            "en": "English language",
+            "kk": "Kazakh language"
+        }
+    },
+    "main":{
+        "item-1": "Modern and quality education",
+        "item-2": "Developed student infrastructure",
+        "item-3": "Busy student life",
+        "item-4": "A large amount of practice",
+        "item-5": "Employment assistance"
+    },
+    "acquaintance":{
+        "title": "A little about college"
+    },
+    "specialitiesTitle" : "Specialties",
+    "specialities":{
+        "software":{
+            "title": "Software (by type)",
+            "linkText": "More details>>>",
+            "href": "Sowtware"
+        },
+        "banking":{
+            "title": "Banking",
+            "linkText": "More details>>>",
+            "href": "Banking"
+        },
+        "pedagogy":{
+            "title": "Pedagogy and methods of primary education",
+            "linkText": "More details>>>",
+            "href": "Pedagogy"
+        },
+        "upbringing":{
+            "title": "Preschool education and training",
+            "linkText": "More details>>>",
+            "href": "Upbringing"
+        },
+        "hairdresser":{
+            "title": "Hairdressing art",
+            "linkText": "More details>>>",
+            "href": "Hairdresser"
+        },
+        "translator":{
+            "title": "Translation business (by type)",
+            "linkText": "More details>>>",
+            "href": "Translator"
+        },
+        "jurisprudence":{
+           "title": "Jurisprudence",
+           "linkText": "More details>>>",
+           "href": "Jurisprudence"
+       },
+       "accounting":{
+           "title": "Accounting and Auditing",
+           "linkText": "More details>>>",
+           "href": "Accounting"
+       },
+       "seamstress":{
+           "title": "Sewing production and clothing design",
+           "linkText": "More details>>>",
+           "href": "Seamstress"
+       },
+       "Tourism":{
+           "title": "Tourism",
+           "linkText": "More details>>>",
+           "href": "Tourism"
+       },
+       "management":{
+           "title": "Management (by industry and application)",
+           "linkText": "More details>>>",
+           "href": "Management"
+       },
+       "ComputerEngineering":{
+           "title": "Computer technology and information networks (by type)",
+           "linkText": "More details>>>",
+           "href": "ComputerEngineering"
+       }
+    },
+    "Information":{
+        "text":{
+            "text-1":"Miras College offers a team of experienced teachers, an individual approach to each student, a vibrant, rich student life, the provision of practice bases and assistance in employment.",
+            "text-2": "We guarantee the SAFETY of every student; the college has taken all necessary security measures and video surveillance."
+        },
+        "accordion":{
+            "applicants":{
+                "title": "DEAR APPLICANTS!",
+                "text-1": "Miras College invites you to take part in the competition for the right to receive expected grants for the 2024-2025 academic year in the following specialties:",
+                "text-2": "Submission of documents from June 25 to August 25. The winners receive a grant for the entire period of study, a monthly stipend and, in certain categories, free travel and meals."
+            },
+            "diploma":{
+                "title": "DIPLOMA IN 10 MONTHS",
+                "text-1": "Miras College offers an accelerated 10-month training program for graduates of 11th grade, as well as for working professionals. This is a unique opportunity to gain qualifications in a very short time. After completing the course, graduates receive a state diploma. Training is carried out in the specialty:",
+                "text-2": "Submission of documents from June 25 to August 25."
+            },
+            "courses":{
+                "title": "SHORT-TERM COURSES",
+                "text-1": "Miras College invites you to free 3-month short-term courses conducted by order of the Employment Center in the city of Shymkent. Anyone from 18 to 54 years old, subject to meeting the conditions, can receive the following specialties:",
+                "text-2": "Course participants undergo practical training at city enterprises and also receive a monthly stipend. At the end of the course, exams are held and a state certificate is issued."
+            },
+            "discount":{
+                "title": "DISCOUNTS UP TO 10%",
+                "text-1": "Miras College is ready to provide assistance to incoming applicants in 2024 and provides a flexible system of discounts of up to 10% on tuition",
+                "text-2": "To receive a discount, submit an application for training and provide the necessary documents."
+            },
+            "commission":{
+                "title": "SELECTION COMMITTEE"
+            }
+            
+        }
+    },
+    "comissionList":{
+        "item-1":{
+            "title": "Address:"
+        },
+        "item-2":{
+            "title": "st. Gani Ilyaeva, 3"
+        },"item-3":{
+            "title": "st. Lomonosova, 7"
+        },
+        "item-4":{
+            "title": "Call-center:"
+        },
+        "item-5":{
+            "title": "8 778 003 09 83"
+        },
+        "item-6":{
+            "title": "Social media:"
+        }
+    },
+    "professionalСourses":{
+        "masterHairdresser":{
+            "title": "Master hairdresser"
+        },
+        "visagiste":{
+            "title": "Visagiste"
+        },
+        "manicurist":{
+            "title": "Manicurist"
+        },
+        "seamstress":{
+            "title": "Seamstress"
+        }
+    },
+    "teachers":{
+        "Gulnar": "Emeshova Gulnar",
+        "Natalya": "Zhekeeva Natalya",
+        "Elena": "Karcher Elena",
+        "Tamara": "Makhalkyzy Tamara",
+        "Evgenija": "Medovshchikova Evgeniya",
+        "Dinara": "Mynbaeva Dinara",
+        "Akmaral": "Raiymbekova Akmaral",
+        "Anara": "Sharapova Anara",
+        "Svetlana": "Spasova Svetlana"
+    },
+    "partners":{
+        "1": "JSC «Sberbank»",
+        "2": "JSC «Bank Center Credit»",
+        "3": "Hotel «Canvas»",
+        "4": "Hotel «Rixos»",
+        "5": "«Prestige tour»",
+        "6": "LLP «Lime travel»",
+        "7": "Branch LLP «Magnum cash&Carry» ",
+        "8": "JSC «Tsesnabank»",
+        "9": "LLP «Firkan»",
+        "10": "LLP «Business and sport travel»",
+        "11": "LLP «Excelsia»",
+        "12": "The educational center «Zerdeli»",
+        "13": "LLP «SHF Gauhar»",
+        "14": "LLP «Skynet Group»",
+        "15": "LLP Petro Kazakhstan",
+        "16": "Branch JSC «Bank KassaNova»"
+    },
+    "sliderTitles":{
+        "teachers": "Our teachers",
+        "partners": "Our partners"
+    }
+    ,
+    "Sowtware":{
+        "speciality":"Software (by type)",
+        "code": "06130100",
+        "qualification": "Graduate qualifications",
+        "qualification-title": "Software Developer",
+        "text":"- a person or organization involved in software development not only from a design and coding perspective, but also beyond programming or project management, including some aspects of software product management",
+        "activity": "Main activities:",
+        "text-2": "developing the structure and content and/or writing the computer program necessary to create and implement the assigned task, including: system software (including updates and patches), software applications (including updates and patches), databases, web pages."
+    },
+    "Banking":{
+        "speciality":"Banking and insurance",
+        "code": "04120100",
+        "qualification": "Graduate qualifications",
+        "qualification-title": "Banking Operations Manager",
+        "text":"- specialist in economics, expert on economic issues.",
+        "activity": "Main activities:",
+        "text-2": "The insurance agent, insurance broker are obliged to ensure the safety of funds in the event of receiving an insurance premium (insurance contributions) from policyholders, as well as the safety of documents provided by the insurer, policyholder;"
+    },
+    "Pedagogy":{
+        "speciality":"Pedagogy and methods of primary education",
+        "code": "01140100",
+        "qualification": "Graduate qualifications",
+        "qualification-title": "Primary education teacher",
+        "text":"- the most humane, sought-after and serious specialty, which is the foundation of all professions. The teacher is engaged in shaping the worldview of young people, in whose hands is the future of the state. Only the first teacher can help solve most of the issues that concern children. This specialty can be called a way of life, since the teacher is responsible for shaping the character of all his students.",
+        "activity": "Main activities:",
+        "text-2": "a teacher can work as a tutor in a center for additional education for children or at home. Pedagogical education also allows you to get a job in a preschool organization as a teacher or methodologist."
+    },
+    "Upbringing":{
+"speciality": "Preschool education and training",
+"code": "01120100",
+"qualification": "Graduate qualification",
+"qualification-title": "Educator of the organization of preschool education and training",
+        "text": "A training program for the training of highly qualified specialists for the organization of preschool education and education.",
+"activity": "Main activities",
+        "text-2": "The objects of professional activity of a graduate in the specialty are educational and methodical activities to create conditions for the mental, moral, labor, emotional and physical development of a child. The graduate is prepared for pedagogical, educational and educational activities in the pre-school education system."
+    },
+    "Hairdresser":{
+    "speciality": "Hairdressing",
+    "code": "10120100",
+    "qualification": "Graduate qualification",
+    "qualification-title": "Fashion designer",
+    "text": "is an area of the service sector that includes a set of funds, methods and methods of human activity aimed at meeting the needs of people outside their professional activities. The hairdresser earns quite good sums. Purposeful craftsmen always succeed.",
+    "activity": "Main activities",
+            "text-2": "A hairdresser can work for himself, but then he has to cover the cost of renting premises and materials himself."
+        },
+    "Translator":{
+    "speciality": "Translation business (by type)*",
+    "code": "02310100",
+    "qualification": "Graduate qualification",
+    "qualification-title": "Translator",
+            "text": "one of the oldest, most humane and noble professions designed to unite people. It has acquired exceptional importance in the 21st century: at the political, social, and cultural levels it has become indispensable in the age of globalization. a translator is a link between representatives of different countries, between a reader and a writer, between people negotiating and building a business, etc.",
+    "activity": "Main activities",
+            "text-2": "The change in the political and economic situation in the Republic of Kazakhstan, the intensification of international cooperation, the emergence of foreign companies in our market, Kazakhstan's entry into the global orbit have significantly increased the demand for specialists who not only speak a foreign language, but also know how to accurately convey the meaning of the original source"
+    },
+    "Jurisprudence":{
+    "speciality": "Jurisprudence",
+    "code": "04210100",
+    "qualification": "Graduate qualification",
+    "qualification-title": "Lawyer",
+            "text": "— specialist in law, legal sciences; a practical figure in the field of law.The concept of lawyer unites all people engaged in diverse professional legal activities — judges, prosecutors, investigators, lawyers, notaries, lawyers in organizations, lawyers engaged in private practice and others.",
+    "activity": "Main activities",
+            "text-2": "Organizational and legal – implementation of the requirements of the laws of the Republic of Kazakhstan and other normative acts in the course of organizational, industrial and other types of activities; monitoring compliance with legislation, legal advice; assistance to individuals and legal entities within the established limits in protecting their rights and legitimate interests. Organizational and managerial – the implementation of organizational and managerial functions in public authorities, in local governments; informing citizens and officials about the provisions of laws and other regulations, dissemination of legal knowledge."
+    },
+    "Accounting":{
+"speciality": "Accounting and auditing",
+        "code": "04110100",
+"qualification": "Graduate qualification",
+"qualification-title": "Accountant",
+"text": "is a specialist prepared for professional activity in accounting and analysis of property, liabilities and business transactions to work at enterprises, organizations, institutions regardless of their organizational and legal forms.",
+"activity": "Main activities",
+        "text-2": "Accounting, analytical and financial control; Document and reflect on accounting accounts transactions related to the movement of fixed assets, inventory, cash; Analyze the economic and financial activities of the organization; Assess the liquidity and solvency of the organization; Use computer technology to process accounting and financial information."
+},
+    "Seamstress":{
+    "speciality": "Sewing production and modeling of clothing",
+    "code": "07230100",
+    "qualification": "Graduate qualification",
+    "qualification-title": "Fashion designer-cutter or Technician-technologist",
+    "text": "specialist who deals with we will reveal the material for further sewing, working in one of several areas of sewing production.",
+    "activity": "Main activities",
+            "text-2": "To develop models in accordance with the purpose of clothing, taking into account the direction of fashion and individual characteristics of the customer; To carry out design drawings of clothing models accepted for production; To produce patterns in accordance with the requirements of the ESCD; To develop design and technological documentation; To carry out technical reproduction of patterns in size and height; To carry out the layout of patterns and cutting of clothing details; Instruct tailors on the specifics of sewing processing; Work with magazines and fashion catalogs, analyze fashion trends; To direct the work of cutters when cutting particularly complex clothing models; To conduct marketing research, market analysis."
+        },
+    "Tourism":{
+        "speciality": "Tourism",
+        "code": "10150100",
+        "qualification": "Graduate qualification",
+        "qualification-title": "Tourism Manager",
+        "text": "is a specialist trained for professional activity in the field of tourism and management of a tourist organization.",
+        "activity": "Main activities",
+        "text-2": "Carries out organizational, managerial and marketing activities in the field of tourism; Uses regulatory documents regulating the professional activity of a specialist; Provides services in the field of tourism; Calculates the cost of a tour; Develops and concludes contracts for the service of tourists."
+    },
+    "Management":{
+        "speciality": "Management (by industry and application)",
+        "code": "04130100",
+        "qualification": "Graduate qualification",
+        "qualification-title": "Manager",
+        "text": " — the head or manager responsible for a certain area of activity of the enterprise (HR manager, investment manager, public relations manager, financial manager, risk manager, brand manager, account manager, sales manager), project manager (project manager) or the whole company (top manager).",
+        "activity": "Main activities",
+        "text-2": "Enterprises of various sectors of the economy and the service sector."
+    },
+    "ComputerEngineering":{
+        "speciality": "Computing and Information networks (by type)",
+        "code": "06120100",
+        "qualification": "Graduate qualification",
+        "qualification-title": "Computer hardware operator",
+        "text": "is a specialist who ensures the smooth operation of computer equipment, local area network, and software. It maintains computers and ensures the smooth functioning of office equipment, computer programs and information networks in the organization",
+        "activity": "Main activities",
+        "text-2": "Introduction of the information processing process on a computer; Preparation for the operation of computer equipment and peripheral devices; Introduction of installed documentation; Work in the main operating systems, their loading and management; Work in shell programs (file managers), performing basic operations with files and directories; Managing the operation of text editors; Working with spreadsheets, maintaining text and digital information in them; Working with databases; Entering, editing and formatting information; Working with data archiving programs; Working with the dot graphics program."
+    }
+}
