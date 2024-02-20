@@ -29,9 +29,9 @@ export default function RootLayout({
   return (
     <html lang={params.lang}>
       <body className={inter.className}>
-        <Header lang={params.lang}/>
+          <Header lang={params.lang}/> 
         {children}
-        <Footer/>
+           <Footer/> 
         </body>
     </html>
   )

@@ -1,13 +1,12 @@
 'use client'
 
-import NavbarLink from './Links/NavbarLink'
+import NavbarLink from '../NextBootstrap/Navbar/Links/NavbarLink'
 import { useEffect } from 'react'
 import { usePathname } from 'next/navigation'
 
-import { i18n } from '@/src/i18n.config'
 
-export default function LocaleSwitcher() {
-    const languages = ['ru', 'en', 'kz']
+export default function LocaleSwitcher({languages}:{languages:any}) {
+    
     const pathName = usePathname()
   useEffect(()=>{
     
@@ -34,18 +33,21 @@ export default function LocaleSwitcher() {
   
     return (
       <>
-        {i18n.locales.map((locale, index) => {
+        {Object.keys(languages.languages.locales).map((locale, index) => {
           return (
             
-              <NavbarLink
+              
+                <NavbarLink
+              className='dropdown-item'
                 key={locale}
                 href={redirectedPathName(locale)}
               >
-                { languages[index] }
+                { languages.languages.locales[locale] }
               </NavbarLink>
+              
             
           )
-        })}
+        })} 
       </>
     )
   }

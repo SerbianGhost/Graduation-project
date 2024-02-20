@@ -7,43 +7,13 @@ import SwiperSlide from './NextBootstrap/Swiper/SwiperSlide';
 import SwiperPagination from './NextBootstrap/Swiper/SwiperPagination';
 
 import { Locale } from '@/src/i18n.config';
-import { getDictionary } from '@/src/lib/dictionary';
+import { getDictionary } from '@/src/api/dictionary';
+import { getPublic } from '@/src/api/getPublic'; 
 
 export default async function Slider({lang, teacher, partner}:{lang:Locale, teacher?:boolean, partner?:boolean}) {
-  const images = [
-    [
-      'https://miras.edu.kz/collegelanding/img/people/emeshova.jpg',
-      'https://miras.edu.kz/collegelanding/img/people/jekeeva.jpg',
-      'https://miras.edu.kz/collegelanding/img/people/kerher.jpg',
-      'https://miras.edu.kz/collegelanding/img/people/mahalkizi.jpg',
-      'https://miras.edu.kz/collegelanding/img/people/medovshikova.jpg',
-      'https://miras.edu.kz/collegelanding/img/people/minbaeva.jpg',
-      'https://miras.edu.kz/collegelanding/img/people/raiimbekova.jpg',
-      'https://miras.edu.kz/collegelanding/img/people/sharapova.jpg',
-      'https://miras.edu.kz/collegelanding/img/people/spasova.jpg'
-    ],
-    [
-      'https://miras.edu.kz/collegelanding/img/clients/cop6.jpg',
-      'https://miras.edu.kz/collegelanding/img/clients/kaztoken1.png',
-      'https://miras.edu.kz/collegelanding/img/clients/canvas.jpg',
-      'https://miras.edu.kz/collegelanding/img/clients/rixos.jpg',
-      'https://miras.edu.kz/collegelanding/img/clients/prestige.jpg',
-      'https://miras.edu.kz/collegelanding/img/clients/liam.jpg',
-      'https://miras.edu.kz/collegelanding/img/clients/magnum.jpg',
-      'https://miras.edu.kz/collegelanding/img/clients/cesna.png',
-      'https://miras.edu.kz/collegelanding/img/clients/firkan.png',
-      'https://miras.edu.kz/collegelanding/img/clients/buisnesssport.jpg',
-      'https://miras.edu.kz/collegelanding/img/clients/exelsia.jpg',
-      'https://miras.edu.kz/collegelanding/img/clients/zardeli.png',
-      'https://miras.edu.kz/collegelanding/img/clients/gauhar.png',
-      'https://miras.edu.kz/collegelanding/img/clients/skynet.png',
-      'https://miras.edu.kz/collegelanding/img/clients/petro.jpg',
-      'https://miras.edu.kz/collegelanding/img/clients/kassa.png'
-    ]
-  ]
-  const { teachers, sliderTitles, partners } = await getDictionary(lang)
-  let sliderTitle = teacher ? 'teachers' : 'partners';
-  let i = teacher? 0 : 1;
+  
+  const { teachers, sliderTitles, partners} = await getDictionary(lang);
+  const { teacherImages, partnerImages } = await getPublic("sliderImages");
   return (
     <div className="slider">
       <Container>
@@ -63,29 +33,30 @@ export default async function Slider({lang, teacher, partner}:{lang:Locale, teac
        
             {teacher && (
   <>
-    {Object.values(teachers).map((value, index) => (
-      <SwiperSlide key={index}>
-        <section className="custom-card">
-          <img src={images[i][index]} alt="" className="custom-card__image" />
-          <h5 className="custom-card__title text-center">{value}</h5>
-        </section>
-      </SwiperSlide>
-    ))}
+    {Object.keys(teachers).map((teacherName, index) => (
+  <SwiperSlide key={index}>
+    <section className="custom-card">
+      <img src={teacherImages[teacherName]} alt="teacher" className="custom-card__image" /> 
+      <h5 className="custom-card__title text-center">{teachers[teacherName]}</h5>
+    </section>
+  </SwiperSlide>
+))}
+
   </>
 )}
 
-{partner && (
+   {partner && (
   <>
-    {Object.values(partners).map((value, index) => (
+    {Object.keys(partners).map((partner, index) => (
       <SwiperSlide key={index}>
         <section className="custom-card">
-          <img src={images[i][index]} alt="" className="custom-card__image" />
-          <h5 className="custom-card__title text-center">{value}</h5>
+            <img src={partnerImages[partner]} alt="" className="custom-card__image" /> 
+          <h5 className="custom-card__title text-center">{partners[partner]}</h5>
         </section>
       </SwiperSlide>
     ))}
   </>
-)}
+)} 
 
 
             </SwiperLine>

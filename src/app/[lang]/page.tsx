@@ -9,6 +9,8 @@ import Information from './components/Information';
 
 import { Locale } from '@/src/i18n.config';
 
+import Test from './components/test';
+
 export default function Home({
   params: { lang }
 }: {
@@ -16,13 +18,14 @@ export default function Home({
 })  {
   return (
    <> 
-   <Main lang={lang}/>
+    <Main lang={lang}/>
    <Acquaintance lang={lang}/>  
    <Information lang={lang}/>
-   <Slider teacher lang={lang}/>
-   <Specialities lang={lang}/>
-   <Slider partner lang={lang}/>
-   <GoogleMap/>
+   <Slider teacher lang={lang}/> 
+   <Specialities lang={lang}/> 
+   <Slider partner lang={lang}/> 
+   <GoogleMap/> 
+   
    </>
   )
 } 

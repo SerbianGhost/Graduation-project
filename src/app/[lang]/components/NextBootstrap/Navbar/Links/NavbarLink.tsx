@@ -1,9 +1,10 @@
+import { ReactNode } from "react";
 import LinkProps from "./LinkProps";
 import Link from "next/link";
-  const NavbarLink: React.FC<LinkProps> = ({ href, children }) => {
+  const NavbarLink = ({ href, children, className }:{href:string, children:ReactNode, className?:string}) => {
     return (
       <li className="nav-item">
-        <Link className="nav-link" href={href}>
+        <Link className={`nav-link ${className || ''}`} href={href}>
           {children}
       </Link>
       </li>

@@ -1,4 +1,4 @@
-import logo from '@/public/Miras Logo.svg'
+
 export default function Logo(){
     return(
         <svg className="logo" width="250" height="67" viewBox="0 0 250 67" fill="none" xmlns="http://www.w3.org/2000/svg">

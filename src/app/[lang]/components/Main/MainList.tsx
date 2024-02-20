@@ -1,7 +1,7 @@
 import { Locale } from "@/src/i18n.config"
-import { getDictionary } from "@/src/lib/dictionary"
+import { getDictionary } from "@/src/api/dictionary"
 export default async function MainList({lang}:{lang:Locale}){
-    const { main } = await getDictionary(lang)
+    const  {main}  = await getDictionary(lang)
     return(
         <ul className="main__list">
             <li className="main__item">{main["item-1"]}</li>

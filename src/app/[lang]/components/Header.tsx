@@ -1,4 +1,4 @@
-import { getDictionary } from "@/src/lib/dictionary"
+import { getDictionary } from "@/src/api/dictionary"
 import { Locale } from "@/src/i18n.config"
 
 import Container from "./NextBootstrap/Container/Container"
@@ -9,13 +9,13 @@ import Offcanvas from "./NextBootstrap/Navbar/Offcanvas/Offcanvas"
 import OffcanvasHeader from "./NextBootstrap/Navbar/Offcanvas/OffcanvasHeader"
 import OffcanvasBody from "./NextBootstrap/Navbar/Offcanvas/OffcanvasBody"
 import Nav from "./NextBootstrap/Navbar/Nav"
-import NavbarLink from "./NextBootstrap/Navbar/Links/NavbarLink"
 import NavDropdown from "./NextBootstrap/Navbar/NavDropdown/NavDropdown"
 import NavDropdownItem from "./NextBootstrap/Navbar/NavDropdown/NavDropdownItem"
 import SocialMedias from "./SocialMedias/SocialMedias"
 import Logo from "./Logo"
 
-import LocaleSwitcher from "./NextBootstrap/Navbar/LocaleSwitcher"
+import LocaleSwitcher from "./LocaleSwitcher/LocaleSwitcher"
+import LocaleDropdown from "./LocaleSwitcher/LocalesDropdown"
 
 
 export default async function Header({lang}:{lang:Locale}) {
@@ -35,7 +35,7 @@ export default async function Header({lang}:{lang:Locale}) {
                         </OffcanvasHeader>
                         <OffcanvasBody>
                             <Nav>
-                                <LocaleSwitcher/>
+                                <LocaleDropdown lang={lang}/>
                                 <li className="nav-item">
                                      <SocialMedias/> 
                                 </li>

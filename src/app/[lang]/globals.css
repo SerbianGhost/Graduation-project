@@ -2,8 +2,9 @@ body{
     position: relative;
     overflow-x: hidden;
 }
-.nav-link{
-    text-transform: uppercase;
+
+.dropdown-item.active, .dropdown-item:active{
+    background-color: inherit;
 }
 @media(max-width:1199px){
     .navbar-brand svg{
