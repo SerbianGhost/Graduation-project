@@ -5,7 +5,7 @@ import GoogleMap from './components/GoogleMap';
 
 import Slider from './components/Slider';
 
-import Information from './components/Information';
+import Information from './components/Information/Information';
 
 import { Locale } from '@/src/i18n.config';
 
