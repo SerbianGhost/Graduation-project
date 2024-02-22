@@ -1,8 +1,18 @@
+html,body{
+    height: 100%;
+}
 body{
     position: relative;
     overflow-x: hidden;
 }
-
+.wrap{
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.content{
+    flex: 1 1 auto;
+}
 .dropdown-item.active, .dropdown-item:active{
     background-color: inherit;
 }
@@ -126,22 +136,29 @@ body{
 .specialities h3{
     margin-top: 65px;
 }
-.specialities__card {
-    text-decoration: none;
-    cursor: pointer;
-    margin: 0 auto;
-    background-color: #F7F9FD;
-    width: 310px;
-    height: 185px;
-    border-radius: 10px;
-    border: 1px solid gray;
-    display: flex;
-    padding: 10px;
-    padding: 30px 20px;
-    flex-direction: column;
-    justify-content: center;
-    transition: all 0.3s ease-in-out;
+.specialities .col{
+    margin-top: 40px;
 }
+.specialities__card {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100%;
+    border: 1px solid black;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    border-radius: 10px;
+    overflow: hidden;
+    border-bottom: 4px solid #B94141;
+}
+.specialities__card img{
+    border-radius: 10px;
+    width: 320px;
+    height: 250px;
+    align-self: center;
+}
+
 .specialities__card:hover{
     background-color: #B94141;
 }
@@ -153,26 +170,23 @@ body{
     color: #B94141;
 }
 .specialities__card-title {
-color: #B94141;
-font-weight: bold;
-font-size: 20px;
-
+    color: #B94141;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
 }
 .specialities__card-link {
-font-weight: normal;
-display: block;
-text-decoration: none;
-color: white;
-padding: 5px;
-border-radius: 5px;
-background-color: #B94141;
-width: max-content;
-
+    font-weight: normal;
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #B94141;
+    width: max-content;
+    align-self: flex-end;
 }
 
-.specialities .col{
-    margin-top: 80px;
-}
+
 .google-map{
     width: 100%;
     margin-top: 30px;
@@ -331,11 +345,6 @@ width: max-content;
     }
 }
 
- @media (max-width: 991px) {
-    .accordion .social-medias{
-        
-    }
-  } 
   .custom-card{
     display: flex;
     flex-direction: column;
@@ -375,7 +384,6 @@ width: max-content;
     background-color: #F7F9FD;
     margin-top: -10px;
     padding-top: 20px;
-    
   }
   footer .container{
     height: max-content;
@@ -412,4 +420,16 @@ width: max-content;
 }
 .facebook svg:hover path{
     fill: white;
+}
+
+.preloader-wrap{
+ height: 100vh;
+ width: 100vw;
+ background-color: white;
+ position: absolute;
+ top: 0;
+ left: 0;
+ display: flex;
+ align-items: center;
+ justify-content: center;
 }

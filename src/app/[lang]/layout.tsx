@@ -29,9 +29,13 @@ export default function RootLayout({
   return (
     <html lang={params.lang}>
       <body className={inter.className}>
+          <div className="wrap">
           <Header lang={params.lang}/> 
-        {children}
+            <div className='content'>
+            {children}
+            </div>
            <Footer/> 
+          </div>
         </body>
     </html>
   )
