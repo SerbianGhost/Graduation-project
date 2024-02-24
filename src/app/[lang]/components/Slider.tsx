@@ -6,14 +6,19 @@ import SwiperLine from './NextBootstrap/Swiper/SwiperLine';
 import SwiperSlide from './NextBootstrap/Swiper/SwiperSlide';
 import SwiperPagination from './NextBootstrap/Swiper/SwiperPagination';
 
-import { Locale } from '@/src/i18n.config';
+import { Locale } from '@/src/utils/i18n.config';
 import { getDictionary } from '@/src/api/dictionary';
 import { getPublic } from '@/src/api/getPublic'; 
+import sortObject from '@/src/utils/sortObjects';
 
 export default async function Slider({lang, teacher, partner}:{lang:Locale, teacher?:boolean, partner?:boolean}) {
   
   const { teachers, sliderTitles, partners} = await getDictionary(lang);
   const { teacherImages, partnerImages } = await getPublic("sliderImages");
+
+  const trachersObj = sortObject(teachers);
+  const partnersObj = sortObject(partners)
+
   return (
     <div className="slider">
       <Container>
@@ -32,8 +37,9 @@ export default async function Slider({lang, teacher, partner}:{lang:Locale, teac
             <SwiperLine>
        
             {teacher && (
+              
   <>
-    {Object.keys(teachers).map((teacherName, index) => (
+    {Object.keys(trachersObj).map((teacherName, index) => (
   <SwiperSlide key={index}>
     <section className="custom-card">
       <img src={teacherImages[teacherName]} alt="teacher" className="custom-card__image" /> 
@@ -47,7 +53,7 @@ export default async function Slider({lang, teacher, partner}:{lang:Locale, teac
 
    {partner && (
   <>
-    {Object.keys(partners).map((partner, index) => (
+    {Object.keys(partnersObj).map((partner, index) => (
       <SwiperSlide key={index}>
         <section className="custom-card">
             <img src={partnerImages[partner]} alt="" className="custom-card__image" /> 

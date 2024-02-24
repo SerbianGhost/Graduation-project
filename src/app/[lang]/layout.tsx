@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
-import { Locale, i18n } from '@/src/i18n.config'
+import { Locale, i18n } from '@/src/utils/i18n.config'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import './globals.css'

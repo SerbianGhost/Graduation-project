@@ -1,5 +1,5 @@
 import MainContent from "./MainContent"
-import { Locale } from "@/src/i18n.config"
+import { Locale } from "@/src/utils/i18n.config"
 
 export default async function Main({lang}:{lang:Locale}){
     return(

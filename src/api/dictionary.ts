@@ -1,6 +1,6 @@
 import { collection, doc, getDoc } from "firebase/firestore";
 import { db } from "./firebaseInitialize";
-import { Locale } from "@/src/i18n.config";
+import { Locale } from "@/src/utils/i18n.config";
 
 
 

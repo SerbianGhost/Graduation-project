@@ -1,4 +1,4 @@
-import { Locale } from "@/src/i18n.config"
+import { Locale } from "@/src/utils/i18n.config"
 import { getDictionary } from "@/src/api/dictionary"
 import SpecialitiesCards from "./SpecialitiesCards"
 export default async function Specialities({lang}:{lang:Locale}){

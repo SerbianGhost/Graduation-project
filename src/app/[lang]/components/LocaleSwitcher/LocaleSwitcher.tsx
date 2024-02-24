@@ -1,8 +1,9 @@
 'use client'
 
-import NavbarLink from '../NextBootstrap/Navbar/Links/NavbarLink'
-import { useEffect } from 'react'
-import { usePathname } from 'next/navigation'
+import NavbarLink from '../NextBootstrap/Navbar/Links/NavbarLink';
+import sortObject from '@/src/utils/sortObjects';
+import { useEffect } from 'react';
+import { usePathname } from 'next/navigation';
 
 
 export default function LocaleSwitcher({languages}:{languages:any}) {
@@ -30,19 +31,21 @@ export default function LocaleSwitcher({languages}:{languages:any}) {
       segments[1] = locale
       return segments.join('/')
     }
-  
+    
+    const lang = sortObject(languages.languages.locales);
+
     return (
       <>
-        {Object.keys(languages.languages.locales).map((locale, index) => {
+        {Object.keys(lang).reverse().map((locale, index) => {
           return (
             
               
                 <NavbarLink
               className='dropdown-item'
-                key={locale}
+                key={index}
                 href={redirectedPathName(locale)}
               >
-                { languages.languages.locales[locale] }
+                { lang[locale] }
               </NavbarLink>
               
             

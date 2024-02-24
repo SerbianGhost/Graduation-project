@@ -1,14 +1,14 @@
-import { Locale } from "@/src/i18n.config"
-import { getDictionary } from "@/src/api/dictionary"
+import { Locale } from "@/src/utils/i18n.config";
+import { getDictionary } from "@/src/api/dictionary";
+import sortObject from "@/src/utils/sortObjects";
 export default async function MainList({lang}:{lang:Locale}){
-    const  {main}  = await getDictionary(lang)
+    const  {main}  = await getDictionary(lang);
+    const mainObj = sortObject(main)
     return(
         <ul className="main__list">
-            <li className="main__item">{main["item-1"]}</li>
-            <li className="main__item">{main["item-2"]}</li>
-            <li className="main__item">{main["item-3"]}</li>
-            <li className="main__item">{main["item-4"]}</li>
-            <li className="main__item">{main["item-5"]}</li>
+            {Object.values<string>(mainObj).map((value:string,index:number)=>(
+                <li className="main__item">{value}</li>
+            ))}
         </ul>
     )
 }

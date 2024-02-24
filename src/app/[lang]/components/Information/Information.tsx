@@ -2,7 +2,7 @@ import Container from "../NextBootstrap/Container/Container";
 import { Accordion, AccordionItem, AccordionHeader, AccordionBody} from '../NextBootstrap/Accordion/accordionConfig'
 import SocialMedias from "../SocialMedias/SocialMedias";
 import { accordionKeys, comissionListKeys } from "./utils/informationKeys";
-import { Locale } from "@/src/i18n.config";
+import { Locale } from "@/src/utils/i18n.config";
 import { getDictionary } from "@/src/api/dictionary";
 
 export default async function Information({ lang }: {lang:Locale}) {
@@ -11,7 +11,8 @@ export default async function Information({ lang }: {lang:Locale}) {
   const listsKeys = comissionListKeys
   
   return (
-    <Container>
+    <div className="information">
+      <Container>
     {Object.values<string>(Information.text).map((value: string, index:number)=>(
         <p key={index} className={`text-center mt-${index === 1 ? 4:5}`}>{ value }</p>
     ))}
@@ -53,5 +54,6 @@ export default async function Information({ lang }: {lang:Locale}) {
         ))}
       </Accordion>
     </Container>
+    </div>
   );
 }

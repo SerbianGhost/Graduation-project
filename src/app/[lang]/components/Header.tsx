@@ -1,5 +1,5 @@
 import { getDictionary } from "@/src/api/dictionary"
-import { Locale } from "@/src/i18n.config"
+import { Locale } from "@/src/utils/i18n.config"
 
 import Container from "./NextBootstrap/Container/Container"
 import Navbar from "./NextBootstrap/Navbar/Navbar"
@@ -9,8 +9,6 @@ import Offcanvas from "./NextBootstrap/Navbar/Offcanvas/Offcanvas"
 import OffcanvasHeader from "./NextBootstrap/Navbar/Offcanvas/OffcanvasHeader"
 import OffcanvasBody from "./NextBootstrap/Navbar/Offcanvas/OffcanvasBody"
 import Nav from "./NextBootstrap/Navbar/Nav"
-import NavDropdown from "./NextBootstrap/Navbar/NavDropdown/NavDropdown"
-import NavDropdownItem from "./NextBootstrap/Navbar/NavDropdown/NavDropdownItem"
 import SocialMedias from "./SocialMedias/SocialMedias"
 import Logo from "./Logo"
 

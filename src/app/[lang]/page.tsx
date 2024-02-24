@@ -9,7 +9,7 @@ import Slider from './components/Slider';
 
 import Information from './components/Information/Information';
 
-import { Locale } from '@/src/i18n.config';
+import { Locale } from '@/src/utils/i18n.config';
 
 import Test from './components/test';
 

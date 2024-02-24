@@ -1,6 +1,5 @@
-import Header from '../../components/Header';
-import Footer from '../../components/Footer';
-import { Locale } from '@/src/i18n.config';
+import HowToApply from '../../components/HowToApply';
+import { Locale } from '@/src/utils/i18n.config';
 import { getDictionary } from '@/src/api/dictionary';
 import { getPublic } from '@/src/api/getPublic'; 
 export default async function speciality({
@@ -29,7 +28,7 @@ export default async function speciality({
         <b>{specialities.speciality[id]['qualification-title']}</b> {specialities.speciality[id].text}
         <p><b> {specialities.public.activity} </b> {specialities.speciality[id]['text-2']} </p>
       </div>
-      
+      <HowToApply lang={lang}/>
     </>
   );
 }
