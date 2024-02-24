@@ -24,7 +24,7 @@ export default function LocaleSwitcher({languages}:{languages:any}) {
       
 
     })
-  },[])
+  },[pathName])
     const redirectedPathName = (locale: string) => {
       if (!pathName) return '/'
       const segments = pathName.split('/')

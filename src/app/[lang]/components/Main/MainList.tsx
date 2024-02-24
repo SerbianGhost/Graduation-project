@@ -7,7 +7,7 @@ export default async function MainList({lang}:{lang:Locale}){
     return(
         <ul className="main__list">
             {Object.values<string>(mainObj).map((value:string,index:number)=>(
-                <li className="main__item">{value}</li>
+                <li key={index} className="main__item">{value}</li>
             ))}
         </ul>
     )

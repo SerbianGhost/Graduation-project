@@ -19,7 +19,7 @@ export default async function Information({ lang }: {lang:Locale}) {
       <Accordion className="mt-5">
         {keys.map((key:string,index:number)=>(
 
-            <AccordionItem>
+            <AccordionItem key={index}>
                 <AccordionHeader>
                 { Information.accordion[key].title }
                 </AccordionHeader>
