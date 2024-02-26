@@ -1,5 +1,5 @@
-import Container from '../../NextBootstrap/Container/Container';
-import { Accordion, AccordionItem, AccordionHeader, AccordionBody} from '../../NextBootstrap/Accordion/utils/accordionConfig'
+import Container from '../../common/NextBootstrap/Container/Container';
+import { Accordion, AccordionItem, AccordionHeader, AccordionBody} from '../../common/NextBootstrap/Accordion/utils/accordionConfig'
 import SocialMedias from '../../common/SocialMedias/SocialMedias';
 import { accordionKeys, comissionListKeys } from "./utils/informationKeys";
 import { Locale } from "@/src/utils/i18n.config";

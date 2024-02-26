@@ -1,9 +1,9 @@
 import { Locale } from "@/src/utils/i18n.config" 
 
-import Container from "../../../NextBootstrap/Container/Container"
+import Container from "../../NextBootstrap/Container/Container"
 
 import { NavbarBrand,NavbarToggle, Offcanvas, OffcanvasHeader,
-         OffcanvasBody,Nav} from '../../../NextBootstrap/Navbar/utils/NavBarConfig'
+         OffcanvasBody,Nav} from '../../NextBootstrap/Navbar/utils/NavBarConfig'
 
 import SocialMedias from "../../SocialMedias/SocialMedias"
 import Logo from "../../Logo"

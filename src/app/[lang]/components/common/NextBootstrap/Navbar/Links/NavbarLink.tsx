@@ -1,5 +1,4 @@
 import { ReactNode } from "react";
-import LinkProps from "./LinkProps";
 import Link from "next/link";
   const NavbarLink = ({ href, children, className }:{href:string, children:ReactNode, className?:string}) => {
     return (

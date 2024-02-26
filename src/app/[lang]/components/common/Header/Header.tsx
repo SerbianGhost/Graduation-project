@@ -1,5 +1,5 @@
 import { Locale } from "@/src/utils/i18n.config"
-import Navbar from "../../NextBootstrap/Navbar/Navbar"
+import Navbar from "../NextBootstrap/Navbar/Navbar"
 import Menu from "./Menu/Menu"
 
 

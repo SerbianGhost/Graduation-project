@@ -1,4 +1,4 @@
-import {Container,Row,Col} from '../../NextBootstrap/Container/utils/containerConfig'
+import {Container,Row,Col} from '../../common/NextBootstrap/Container/utils/containerConfig'
 import { Locale } from "@/src/utils/i18n.config";
 import { getDictionary } from "@/src/api/dictionary";
 import { getPublic } from "@/src/api/getPublic"; 

@@ -1,6 +1,6 @@
 import { getDictionary } from "@/src/api/dictionary"
 import { Locale } from "@/src/utils/i18n.config"
-import { Container,Row,Col } from '../NextBootstrap/Container/utils/containerConfig'
+import { Container,Row,Col } from '../common/NextBootstrap/Container/utils/containerConfig'
 export default async function HowToApply({lang}:{lang:Locale}){
     const { Apply } = await getDictionary(lang)
     return(

@@ -1,7 +1,4 @@
-'use client'
-
-export default function AccordionHeader({children}:{children?:React.ReactNode}){
-  const collapse = (e: any) => {
+const collapse = (e: any) => {
     const btn = e.target;
     const accordionHeader = btn.parentNode;
     const accordionItem = accordionHeader.parentNode;
@@ -27,12 +24,5 @@ export default function AccordionHeader({children}:{children?:React.ReactNode}){
     btn.classList.toggle('collapsed');
   
   };
-  
-    return(
-        <h2 className="accordion-header">
-          <button onClick={collapse} className="accordion-button collapsed" type="button">
-            {children}
-          </button>
-    </h2>
-    )
-}
+
+  export default collapse;
