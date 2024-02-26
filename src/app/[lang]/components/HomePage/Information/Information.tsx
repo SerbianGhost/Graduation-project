@@ -1,6 +1,6 @@
-import Container from "../NextBootstrap/Container/Container";
-import { Accordion, AccordionItem, AccordionHeader, AccordionBody} from '../NextBootstrap/Accordion/accordionConfig'
-import SocialMedias from "../SocialMedias/SocialMedias";
+import Container from '../../NextBootstrap/Container/Container';
+import { Accordion, AccordionItem, AccordionHeader, AccordionBody} from '../../NextBootstrap/Accordion/accordionConfig'
+import SocialMedias from '../../common/SocialMedias/SocialMedias';
 import { accordionKeys, comissionListKeys } from "./utils/informationKeys";
 import { Locale } from "@/src/utils/i18n.config";
 import { getDictionary } from "@/src/api/dictionary";

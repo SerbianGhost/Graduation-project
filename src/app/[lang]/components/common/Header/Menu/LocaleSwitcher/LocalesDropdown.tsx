@@ -1,4 +1,4 @@
-import NavDropdown from "../NextBootstrap/Navbar/NavDropdown/NavDropdown"
+import NavDropdown from "../../../../NextBootstrap/Navbar/NavDropdown/NavDropdown";
 import LocaleSwitcher from "./LocaleSwitcher"
 import { Locale } from "@/src/utils/i18n.config"
 import { getDictionary } from "@/src/api/dictionary"

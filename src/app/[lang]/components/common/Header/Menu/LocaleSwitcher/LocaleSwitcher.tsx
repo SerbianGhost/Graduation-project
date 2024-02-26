@@ -1,6 +1,6 @@
 'use client'
 
-import NavbarLink from '../NextBootstrap/Navbar/Links/NavbarLink';
+import NavbarLink from '../../../../NextBootstrap/Navbar/Links/NavbarLink';
 import sortObject from '@/src/utils/sortObjects';
 import { useEffect } from 'react';
 import { usePathname } from 'next/navigation';

@@ -1,4 +1,4 @@
-import HowToApply from '../../components/HowToApply';
+import HowToApply from '../../components/SpecialitiesPage/HowToApply';
 import { Locale } from '@/src/utils/i18n.config';
 import { getDictionary } from '@/src/api/dictionary';
 import { getPublic } from '@/src/api/getPublic'; 

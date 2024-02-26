@@ -1,4 +1,4 @@
-import Container from "./NextBootstrap/Container/Container"
+import Container from "../NextBootstrap/Container/Container"
 import SocialMedias from "./SocialMedias/SocialMedias"
 export default function Footer () {
     return(
