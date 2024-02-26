@@ -1,10 +1,6 @@
 import React, { Key } from 'react';
 import Container from '../NextBootstrap/Container/Container';
-import Swiper from '../NextBootstrap/Swiper/Swiper';
-import SwiperWrapper from '../NextBootstrap/Swiper/SwiperWrapper';
-import SwiperLine from '../NextBootstrap/Swiper/SwiperLine';
-import SwiperSlide from '../NextBootstrap/Swiper/SwiperSlide';
-import SwiperPagination from '../NextBootstrap/Swiper/SwiperPagination';
+import { Swiper, SwiperWrapper,SwiperLine,SwiperSlide,SwiperPagination } from '../NextBootstrap/Swiper/utils/swiperConfig'
 
 import { Locale } from '@/src/utils/i18n.config';
 import { getDictionary } from '@/src/api/dictionary';
