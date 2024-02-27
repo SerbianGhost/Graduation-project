@@ -75,6 +75,9 @@ body{
         margin-left: -35px;
         margin-top: 5px;
     }
+    .offcanvas, .offcanvas-end{
+        min-height: 100vh;
+    }
 }
 .main{
     background-image: url('./../../../public/img/main-picture.gif');
