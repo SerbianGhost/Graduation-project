@@ -2,18 +2,28 @@
 
 import NavbarLink from '../../../NextBootstrap/Navbar/Links/NavbarLink';
 import sortObject from '@/src/utils/sortObjects';
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 import { usePathname } from 'next/navigation';
 
 
 export default function LocaleSwitcher({languages}:{languages:any}) {
-  
-    const [activeLink,setActiveLink] = useState('')
+    
     const pathName = usePathname()
   useEffect(()=>{
+    
+    const links = document.querySelectorAll('.nav-link');
+    links.forEach((link:any)=>{
+      
+      if(link.href.match(pathName)){
+        link.classList.add('active')
+      }
+      else{
+        link.classList.remove('active')
+      }
 
-    setActiveLink(pathName)
+      
 
+    })
   },[pathName])
     const redirectedPathName = (locale: string) => {
       if (!pathName) return '/'
@@ -31,7 +41,7 @@ export default function LocaleSwitcher({languages}:{languages:any}) {
             
               
                 <NavbarLink
-                className={`dropdown-item ${activeLink.includes(locale) ? 'active' : ''}`}
+                className='dropdown-item'
                 key={index}
                 href={redirectedPathName(locale)}
               > 
